@@ -1,5 +1,153 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-fsouza-go-dockerclient (1.11.0-2) unstable; urgency=medium
 
-  * Initial release
+  * Team upload
+  * Upload changes from experimental to unstable
+  * Bump debhelper-compat to v13 in d/control
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Mathias Gibbens <gibmat@debian.org>  Fri, 26 Jul 2024 08:49:15 +0000
+
+golang-github-fsouza-go-dockerclient (1.11.0-1) experimental; urgency=medium
+
+  * Team upload
+  * New upstream version 1.11.0
+  * Build against docker version 26 (currently in experimental)
+    - upstream targets docker 24, docker 26 moved the AuthConfig type,
+      added distro-patch to allow compilation
+  * Bump standards version
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sat, 06 Jul 2024 19:48:46 -0400
+
+golang-github-fsouza-go-dockerclient (1.8.1-1) unstable; urgency=medium
+
+  * Team upload
+  * Fix url in uscan watch file
+  * New upstream version 1.8.1
+  * Update Section to golang
+  * Update maintainer address to team+pkg-go@tracker.debian.org
+  * Adjust Build-Depends for new version (Closes: #982664)
+  * Update Standards-Version to 4.6.1 (no changes)
+
+ -- Shengjing Zhu <zhsj@debian.org>  Sat, 02 Jul 2022 02:45:06 +0800
+
+golang-github-fsouza-go-dockerclient (1.6.6-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version
+
+ -- Reinhard Tartler <siretart@tauware.de>  Mon, 30 Nov 2020 16:57:13 -0500
+
+golang-github-fsouza-go-dockerclient (1.6.5-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Wrap long lines in changelog entries.
+  * Set upstream metadata fields.
+
+  [ Dmitry Smirnov ]
+  * New upstream release.
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Thu, 11 Jun 2020 20:52:46 +1000
+
+golang-github-fsouza-go-dockerclient (1.6.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Standards-Version: 4.5.0.
+  * Depend on non-transitional "logrus-dev" package.
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Thu, 27 Feb 2020 09:50:08 +1100
+
+golang-github-fsouza-go-dockerclient (1.6.0-2) unstable; urgency=medium
+
+  * (Build-)Depends: removed obsolete alternative dependencies.
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Sat, 30 Nov 2019 08:38:43 +1100
+
+golang-github-fsouza-go-dockerclient (1.6.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Standards-Version: 4.4.1.
+  * Use non-transitional "logrus" package.
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Thu, 14 Nov 2019 19:36:50 +1100
+
+golang-github-fsouza-go-dockerclient (1.4.4-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Standards-Version: 4.4.0.
+  * DH & compat to version 12.
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Fri, 27 Sep 2019 10:13:59 +1000
+
+golang-github-fsouza-go-dockerclient (1.2.1-2) unstable; urgency=medium
+
+  * New upstream patch to fix failing test (Closes: #907713).
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Sat, 26 Jan 2019 11:04:02 +1100
+
+golang-github-fsouza-go-dockerclient (1.2.1-1) unstable; urgency=medium
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Dmitry Smirnov ]
+  * New upstream relase.
+  * Build-Depends:
+    + golang-github-google-go-cmp-dev (>= 0.2.0~)
+    = golang-github-docker-docker-dev (>= 17.12.1~)
+  * Testsuite: autopkgtest-pkg-go
+  * Standards-Version: 4.1.4; Priority: optional.
+    rules: removed get-orig-source target.
+  * debhelper & compat to version 11
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Thu, 21 Jun 2018 09:42:17 +1000
+
+golang-github-fsouza-go-dockerclient (0.0+git20160622-3) unstable; urgency=medium
+
+  * Team upload.
+  * Set XS-Go-Import-Path
+  * fix FTBFS by applying upstream certificate update (Closes: #880293)
+
+ -- Michael Stapelberg <stapelberg@debian.org>  Thu, 15 Feb 2018 08:34:41 +0100
+
+golang-github-fsouza-go-dockerclient (0.0+git20160622-2) unstable; urgency=medium
+
+  [ Paul Tagliamonte ]
+  * Team upload.
+  * Remove Built-Using from arch:all -dev package
+
+  [ Konstantinos Margaritis ]
+  * Replace golang-go with golang-any in Build-Depends, remove golang-go from
+    Depends
+
+ -- Konstantinos Margaritis <markos@debian.org>  Wed, 09 Aug 2017 15:47:15 +0300
+
+golang-github-fsouza-go-dockerclient (0.0+git20160622-1) unstable; urgency=medium
+
+  * New upstream snapshot.
+  * Use test data and stop ignoring test failures.
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Fri, 15 Jul 2016 20:06:10 +1000
+
+golang-github-fsouza-go-dockerclient (0.0+git20160316-2) unstable; urgency=medium
+
+  * Dropped unused dependency on "golang-docker-dev"; added "README.source".
+  * Standards-Version: 3.9.8.
+  * Vcs-Git URL to HTTPS.
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Sun, 12 Jun 2016 09:17:49 +1000
+
+golang-github-fsouza-go-dockerclient (0.0+git20160316-1) unstable; urgency=medium
+
+  * New upstream snapshot.
+  * Standards-Version: 3.9.7.
+  * (Build-)Depends:
+    + golang-github-docker-go-units-dev
+    + golang-golang-x-net-dev
+    + golang-golang-x-sys-dev
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Fri, 18 Mar 2016 19:46:57 +1100
+
+golang-github-fsouza-go-dockerclient (0.0+git20150905-1) unstable; urgency=medium
+
+  * Initial release (Closes: #798342).
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Tue, 08 Sep 2015 07:20:24 +1000
