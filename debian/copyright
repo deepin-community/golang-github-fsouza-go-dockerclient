@@ -74,11 +74,6 @@ Files: debian/*
 Copyright: 2015-2018, Dmitry Smirnov <onlyjob@debian.org>
 License: GPL-3+
 
-Files: debian/patches/*
-Copyright: 2015, 2016, Dmitry Smirnov <onlyjob@debian.org>
-License: GPL-3+ or Apache-2.0 or BSD-2-clause
-Comment: patches can be licensed under the same terms as upstream.
-
 Files: env.go
 Copyright: 2014, Docker authors.
 License: Apache-2.0
