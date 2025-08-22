@@ -4,6 +4,7 @@ Priority: optional
 Standards-Version: 4.7.0
 Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
 Uploaders: Dmitry Smirnov <onlyjob@debian.org>,
+           Reinhard Tartler <siretart@tauware.de>
 Build-Depends: debhelper-compat (= 13),
                dh-golang,
                golang-any,
